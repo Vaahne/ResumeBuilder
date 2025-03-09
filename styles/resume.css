@@ -1,10 +1,12 @@
 body{
-    background-color: rgb(68, 47, 95);
+    background-color:rgb(56, 39, 39);
     color:white;
     margin: 0 5px;
     height: 100vh;
     width: 90%;
     max-width: 800px;
+    font-family: "Orbitron", sans-serif;
+    /* font-family: 'Courier New', Courier, monospace ; */
 }
 .box{
     /* border: 4px solid rgb(235, 224, 224); */
@@ -34,9 +36,11 @@ body{
 #box2{
     flex-grow: 1;
     align-self: center;
+    color:grey;
 }
 #box3{
     width: 99%;
+    color:grey;
 }
 .section1{
     display: flex;
@@ -58,6 +62,7 @@ h2{
 }
  .bodyContainer{
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-around;
     margin: 1px 2px;;
     padding: 2px;
@@ -70,7 +75,7 @@ aside{
 #section2{
     /* border: 4px solid orange; */
     /* flex-grow: 3; */
-    width: 80%;    
+    width: 60%;    
 }
 /* #section3{ */
     /* border: 4px solid yellow; */
@@ -89,6 +94,9 @@ span{
 }
 #prog{
     list-style: none;
+    color:grey;
+    font-size: 12px;
+    padding:1rem 1px;
 }
 
 hr{
@@ -116,7 +124,7 @@ hr{
 }
 .org{
     display:flex;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -157,6 +165,7 @@ hr{
     width:80%;
     color:white;
     text-align:right;
+    margin: 3% 1px;
 }
 .html{
     background: linear-gradient(to right,cyan 90%,grey 10%);
@@ -176,6 +185,8 @@ hr{
 ul#graphic{
     list-style-type: none ;
     padding-left: 20px;
+    color:grey;
+    font-size: 12px;
 }
 #graphic>li::before{
     content:"■";
@@ -194,11 +205,23 @@ ul#graphic{
 }
 ul#lang{
     list-style-type: none;
+    color:grey;
 }
-/* 
-@media only screen (min-width: 300px) {
+.desc{
+  font-size: 12px;  
+  color:grey;
+}
+.cir{
+    display: flex;
+}
+.cir:nth-child(2){
+    padding-left: 2px;
+}
+
+
+@media only screen and (max-width: 300px) {
     #section2, #section3 {
         width: 100%;
     }
-} */
+}
 
