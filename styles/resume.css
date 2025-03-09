@@ -87,7 +87,7 @@ aside{
 span{
     float: right;
 }
-ul{
+#prog{
     list-style: none;
 }
 
@@ -152,6 +152,48 @@ hr{
     position:relative;
  	left: 3% ;  
     font-size: 12px;
+}
+.progressbar{
+    width:80%;
+    color:white;
+    text-align:right;
+}
+.html{
+    background: linear-gradient(to right,cyan 90%,grey 10%);
+}
+.css{
+    background: linear-gradient(to right,rgb(19, 151, 151) 80%,grey 20%);
+}
+.js{
+    background: linear-gradient(to right,green 70%,grey 30%);
+}
+.mysql{
+    background: linear-gradient(to right,orange 60%,grey 40%);
+}
+.react{
+    background: linear-gradient(to right,yellow 50%,grey 50%);
+}
+ul#graphic{
+    list-style-type: none ;
+    padding-left: 20px;
+}
+#graphic>li::before{
+    content:"■";
+}
+.red::before{
+    color: red;
+}
+.blue::before{
+    color:blue;
+}
+.orange::before{
+    color:orange;
+}
+.pink::before{
+    color:pink;
+}
+ul#lang{
+    list-style-type: none;
 }
 /* 
 @media only screen (min-width: 300px) {
