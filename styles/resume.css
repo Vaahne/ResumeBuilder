@@ -1,12 +1,11 @@
 body{
-    background-color:rgb(56, 39, 39);
+    background-color:rgb(67, 50, 50);
     color:white;
-    margin: 0 5px;
+    margin: 0 auto;
     height: 100vh;
     width: 90%;
     max-width: 800px;
     font-family: "Orbitron", sans-serif;
-    /* font-family: 'Courier New', Courier, monospace ; */
 }
 .box{
     /* border: 4px solid rgb(235, 224, 224); */
@@ -17,7 +16,7 @@ body{
     flex-grow: 1;
     align-self: center;
     height: 4rem;
-    border-radius: 50%;
+    object-fit:scale-down;
 }
 #nameSection{
     flex-grow:1;
@@ -26,6 +25,9 @@ body{
     padding-right: 3px;
     margin-right: 1%;
     max-width: 100%;
+}
+.title{
+    color:aqua;
 }
 #box1{
     display: flex;
@@ -37,11 +39,16 @@ body{
 #box2{
     flex-grow: 1;
     align-self: center;
-    color:grey;
+}
+strong{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color:aqua;
 }
 #box3{
     width: 99%;
-    color:grey;
 }
 .section1{
     display: flex;
@@ -56,9 +63,10 @@ body{
     flex-direction: column;
     align-items: center;
     margin:auto;
+    background-color: rgb(79, 70, 70);
 }
 h2{
-    font-size: clamp(16px, 4vw, 32px);
+    font-size: 26px;
     word-wrap: break-word;
 }
  .bodyContainer{
@@ -78,10 +86,7 @@ aside{
     /* flex-grow: 3; */
     width: 60%;    
 }
-/* #section3{ */
-    /* border: 4px solid yellow; */
-    /* flex-grow:1; */
-/* } */
+
 .bar1{
     background-color: rgb(85, 83, 83);
     border: 0;
@@ -94,15 +99,17 @@ span{
     float: right;
 }
 #prog{
-    list-style: none;
-    color:grey;
-    font-size: 12px;
+    list-style-type: none;
+    /* color:grey; */
     padding:1rem 1px;
 }
 
 hr{
     width: 94%;
     border: 1px solid grey;
+}
+h3{
+    font-size: 16px;
 }
 .bar1>h3::before{
     content: "▼";
@@ -125,7 +132,6 @@ hr{
 }
 .org{
     display:flex;
-    font-size: 14px;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -146,13 +152,9 @@ hr{
 .edu::before{
     background-color: rgb(90, 137, 19);
 }
-.smallText{
-    font-size: 14px;
-    color:gray;
-}
+
 .date{
-	color:grey;
-    font-size:14px;
+	/* color:grey; */
     margin-left:auto;
     margin-right:3%;
 }
@@ -186,11 +188,13 @@ hr{
 ul#graphic{
     list-style-type: none ;
     padding-left: 20px;
-    color:grey;
-    font-size: 12px;
+    /* color:grey; */
 }
 #graphic>li::before{
     content:"■";
+}
+#graphic>li{
+    margin-top: 3%;
 }
 .red::before{
     color: red;
@@ -206,7 +210,7 @@ ul#graphic{
 }
 ul#lang{
     list-style-type: none;
-    color:grey;
+    /* color:grey; */
 }
 .desc{
   font-size: 12px;  
@@ -216,11 +220,32 @@ ul#lang{
     display: flex;
 }
 .cir:nth-child(2){
-    padding-left: 2px;
+    padding-left: 3px;
+}
+.circle1:nth-child(n+1):nth-child(-n+3){
+    color:blue;
+}
+.circle2{
+    color:yellow;
+}
+.circle3:nth-child(n+1):nth-child(-n+2){
+    color:brown
 }
 
+.circle:nth-child(1){
+    padding-left: 3px;
+}
 
-@media only screen and (max-width: 300px) {
+.grey{
+    color:grey;
+}
+.mediumFont{
+    font-size: 14px;
+}
+.smallFont{
+    font-size: 12px;
+}
+@media only screen and (max-width: 400px) {
     #section2, #section3 {
         width: 100%;
     }
