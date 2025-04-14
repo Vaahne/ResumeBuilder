@@ -1,0 +1,40 @@
+.section1{
+    display:flex;
+    flex-wrap:wrap;
+}
+.box{
+    border: 2px solid black;
+}
+#box1{
+    /* width:49%; */
+    flex-grow: 1;
+    display: flex;
+    /* clear: both; */
+}
+#box2{
+    /* width:49%; */
+    flex-grow:1;
+}
+body{
+    margin: 0;
+}
+#section2{
+    border: 2px solid black;
+    flex-grow: 3;
+}
+#section3{
+    border: 2px solid black;
+    flex-grow: 1;
+}
+.bodySection{
+    display: flex;
+}
+img{
+    object-fit: contain;
+}
+@media only screen and (max-width:400px) {
+    #section1{
+        background-color: red;
+    }
+    
+}
